@@ -1,0 +1,44 @@
+@use "./../variables.scss";
+
+.title {
+  display: flex;
+
+  &--h2 {
+    gap: 20px;
+
+    &::before {
+      content: "";
+      height: 15px;
+      width: 0;
+      border-bottom: 2px solid variables.$accent-color;
+    }
+
+    &::after {
+      content: "";
+      height: 15px;
+      width: 10px;
+      border-bottom: 2px solid variables.$accent-color;
+      flex-grow: 1;
+    }
+  }
+}
+
+.title__text {
+  margin: 0;
+  font-weight: 400;
+  color: variables.$accent-text-color;
+}
+
+.title--light .title__text {
+  color: #ffffff;
+}
+
+.title--h1 .title__text {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.title--h2 .title__text {
+  font-size: 24px;
+  line-height: 26px;
+}

@@ -1,0 +1,42 @@
+@use "./../variables.scss";
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: variables.$primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: variables.$accent-color;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--secondary {
+    color: variables.$base-text-color;
+    background: #f2f2f2;
+
+    &:hover,
+    &:focus {
+      background: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background: #ebebeb;
+    }
+  }
+}

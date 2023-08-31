@@ -1,0 +1,26 @@
+@use "./../variables.scss";
+
+.contacts {
+  display: flex;
+  padding: 26px 20px;
+
+  &--light {
+    background-color: #ffffff;
+  }
+}
+
+.contacts__info {
+  flex-basis: 50%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__address {
+  flex-basis: 50%;
+  margin: 0;
+  font-family: variables.$secondary-font;
+  line-height: 20px;
+}

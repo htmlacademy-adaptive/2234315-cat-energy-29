@@ -1,0 +1,89 @@
+@use "./../variables.scss";
+
+.slider {
+  position: relative;
+}
+
+.slider__layers {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.slider__layer {
+  display: flex;
+  flex-basis: 50%;
+  overflow: hidden;
+
+  &:last-child {
+    justify-content: end;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slider__control-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    border: 2px solid #666666;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    border-color: variables.$accent-color;
+  }
+
+  &:active::after {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
+}
+
+.slider__control-item path {
+  fill: #666666;
+}
+
+.slider__control-item:hover path,
+.slider__control-item:focus path {
+  fill: variables.$accent-color;
+}
+
+.slider__control-item:active path {
+  fill: rgba(94, 170, 47, 0.6);
+}
+
+.slider__control-item rect {
+  stroke: #666666;
+}
+
+.slider__control-item:hover rect,
+.slider__control-item:focus rect {
+  stroke: variables.$accent-color;
+}
+
+.slider__control-item:active rect {
+  stroke: rgba(94, 170, 47, 0.6);
+}
