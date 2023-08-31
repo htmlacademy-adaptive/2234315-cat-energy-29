@@ -93,14 +93,14 @@
   width: 24px;
   height: 24px;
   background-color: #ffffff;
-  background-image: url("./../../img/icons/close-icon.svg");
+  background-image: url("../img/icons/close-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 .main-nav__toggle--burger {
-  background-image: url("./../../img/icons/burger-icon.svg");
+  background-image: url("../img/icons/burger-icon.svg");
 }
 
 .main-nav__list {
@@ -168,7 +168,7 @@
   width: 100%;
   height: 302px;
   background-color: #68b738;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("./../../img/hero-background.jpg"), linear-gradient(#4c4a4f, #4c4a4f);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-background.jpg"), linear-gradient(#4c4a4f, #4c4a4f);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,16 +302,16 @@
   margin-bottom: 20px;
 }
 .about-product__list-item--leaf {
-  background-image: url("./../../img/icons/leaf-icon.svg");
+  background-image: url("../img/icons/leaf-icon.svg");
 }
 .about-product__list-item--powder {
-  background-image: url("./../../img/icons/powder-icon.svg");
+  background-image: url("../img/icons/powder-icon.svg");
 }
 .about-product__list-item--food {
-  background-image: url("./../../img/icons/food-icon.svg");
+  background-image: url("../img/icons/food-icon.svg");
 }
 .about-product__list-item--alarm {
-  background-image: url("./../../img/icons/alarm-icon.svg");
+  background-image: url("../img/icons/alarm-icon.svg");
 }
 
 .main-footer {
@@ -373,7 +373,7 @@
   width: 100%;
   height: 362px;
   background-color: #f2f2f2;
-  background-image: url("./../../img/map-background.jpg");
+  background-image: url("../img/map-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -747,7 +747,7 @@
 .additional-products__banner {
   padding: 59px 58px 43px;
   background-color: #68b738;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("./../../img/banner-background.jpg"), linear-gradient(#4c4a4f, #4c4a4f);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/banner-background.jpg"), linear-gradient(#4c4a4f, #4c4a4f);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
