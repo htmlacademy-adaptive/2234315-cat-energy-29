@@ -10,14 +10,14 @@
   width: 24px;
   height: 24px;
   background-color: #ffffff;
-  background-image: url("./../../img/icons/close-icon.svg");
+  background-image: url("../img/icons/close-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 
   &--burger {
-    background-image: url("./../../img/icons/burger-icon.svg");
+    background-image: url("../img/icons/burger-icon.svg");
   }
 }
 
