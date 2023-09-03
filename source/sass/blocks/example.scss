@@ -1,0 +1,61 @@
+@use "./../variables.scss";
+
+.example {
+  padding: 25px 0 40px;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin: 0 0 40px;
+}
+
+.example__description {
+  margin: 0 0 20px;
+  font-family: variables.$secondary-font;
+}
+
+.example__properties {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.example__property {
+  width: 100%;
+  max-width: 50%;
+  height: min-content;
+  padding: 15px 20px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.example__property-number {
+  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: variables.$accent-text-color;
+}
+
+.example__property-description {
+  max-width: 87px;
+  margin: 0 auto -30px;
+  padding: 0 5px;
+  font-family: variables.$secondary-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+.example__info {
+  margin-bottom: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: variables.$accent-text-color;
+}

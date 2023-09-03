@@ -1,0 +1,44 @@
+@use "./../variables.scss";
+
+.about-product {
+  padding: 10px 0 49px;
+}
+
+.about-product__title {
+  margin: 0 0 40px;
+}
+
+.about-product__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.about-product__list-item {
+  min-height: 60px;
+  padding: 0 0 0 80px;
+  font-family: variables.$secondary-font;
+  background-position: left top;
+  background-size: 60px;
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &--leaf {
+    background-image: url("../img/icons/leaf-icon.svg");
+  }
+
+  &--powder {
+    background-image: url("../img/icons/powder-icon.svg");
+  }
+
+  &--food {
+    background-image: url("../img/icons/food-icon.svg");
+  }
+
+  &--alarm {
+    background-image: url("../img/icons/alarm-icon.svg");
+  }
+}

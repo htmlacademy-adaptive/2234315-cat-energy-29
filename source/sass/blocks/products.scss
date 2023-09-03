@@ -1,0 +1,51 @@
+@use "./../variables.scss";
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__list {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products__item {
+  border-top: 1px solid #ebebeb;
+}
+
+.products__more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 20px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.products__more-content::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 23px;
+  background: url("./../../img/icons/plus-icon.svg") center no-repeat;
+}
+
+.products__more-title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+
+.products__more-description {
+  margin: 0 0 21px;
+  font-family: variables.$secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+}

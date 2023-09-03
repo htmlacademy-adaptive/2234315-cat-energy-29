@@ -1,0 +1,18 @@
+.main-logo {
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-logo__name {
+  margin-left: 56px;
+}
