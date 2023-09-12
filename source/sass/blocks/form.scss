@@ -1,12 +1,12 @@
 @use "./../variables.scss";
 
 .form {
-  padding: 5px 0 5px;
+  padding: 0 0 5px;
 }
 
 .form__section {
   &--base {
-    padding: 24px 0;
+    padding: 0 0 24px;
   }
 
   &--owner {
@@ -24,10 +24,57 @@
   &--submit {
     padding-top: 23px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    &--submit {
+      padding-top: 54px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &--submit {
+      padding-top: 64px;
+    }
+  }
 }
 
 .form__title {
   margin-bottom: 35px;
+}
+
+.form__group-wrapper {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+  }
+}
+
+.form__group {
+  &--cat {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &--cat {
+      margin-bottom: 72px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &--cat {
+      width: 100%;
+      margin: 0 80px 0 0;
+    }
+
+    &--programs {
+      width: 100%;
+    }
+  }
+}
+
+.form__section--owner .form__group {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+  }
 }
 
 .form__label {
@@ -41,6 +88,21 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.form__section--owner .form__label {
+  @media (min-width: variables.$desktop-width) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin: 0 80px 0 0;
+    }
   }
 }
 
@@ -83,14 +145,39 @@
 }
 
 .form__list {
-  margin: 0 -20px;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
-.form__section--programs .form__list {
+.form__group--programs .form__list {
+  margin: 0 -20px;
+  padding: 20px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+    padding: 23px 27px;
+    border: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 25px 28px;
+  }
+}
+
+.form__section--additional .form__list {
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 64px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+  }
 }
 
 .form__item {
@@ -99,6 +186,17 @@
 
   &:not(:last-child) {
     margin-bottom: 13px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.form__section--additional .form__item {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -178,6 +276,14 @@
   fill: variables.$accent-color;
 }
 
+.form__section--submit .form__group {
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+}
+
 .form__legend {
   display: block;
   margin-top: 21px;
@@ -186,4 +292,8 @@
   line-height: 16px;
   text-align: center;
   color: variables.$accent-text-color;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: start;
+  }
 }

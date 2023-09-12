@@ -1,3 +1,5 @@
+@use "./../variables.scss";
+
 .main-logo {
   display: flex;
   align-items: center;
@@ -15,4 +17,8 @@
 
 .main-logo__name {
   margin-left: 56px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-left: 13px;
+  }
 }
