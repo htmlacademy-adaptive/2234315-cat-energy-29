@@ -39,4 +39,8 @@
       background: #ebebeb;
     }
   }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+  }
 }

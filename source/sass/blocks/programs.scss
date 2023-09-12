@@ -1,22 +1,80 @@
 @use "./../variables.scss";
 
 .programs {
-  padding: 10px 0;
+  padding: 0 0 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 80px 0 40px;
+  }
 }
 
 .programs__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+  }
 }
 
 .programs__item {
   position: relative;
-  padding: 24px 20px 0;
+  padding: 30px 20px 0;
   background-color: #f2f2f2;
+  background-repeat: no-repeat;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &--weight-loss {
+    background-image: url("../img/icons/sitting-cat.svg");
+    background-position: top 20px left 20px;
+    background-size: 50px 53px;
+  }
+
+  &--weight-gain {
+    background-image: url("../img/icons/walking-cat.svg");
+    background-position: top 24px left 13px;
+    background-size: 67px 50px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 77px 315px 53px 52px;
+
+    &--weight-loss {
+      background-position: top 81px right 63px;
+      background-size: 200px 211px;
+    }
+
+    &--weight-gain {
+      background-position: top 91px right 29px;
+      background-size: 268px 200px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 100%;
+    padding: 77px 61px 55px 52px;
+
+    &:not(:last-child) {
+      margin: 0 80px 0 0;
+    }
+
+    &--weight-loss {
+      background-position: top 41px left 52px;
+      background-size: 100px 106px;
+    }
+
+    &--weight-gain {
+      background-position: top 47px left 33px;
+      background-size: 134px 100px;
+    }
   }
 }
 
@@ -28,12 +86,32 @@
   line-height: 37px;
   text-transform: uppercase;
   color: variables.$accent-text-color;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .programs__item-description {
-  margin: 0;
-  padding-bottom: 23px;
+  margin: 0 0 23px;
   font-family: variables.$secondary-font;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 48px;
+    color: #000000;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .programs__item-link {
@@ -51,5 +129,11 @@
   &:focus {
     color: rgba(0, 0, 0, 0.3);
     outline: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 4px 0;
+    font-size: 20px;
+    border-top: none;
   }
 }

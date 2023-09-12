@@ -3,15 +3,31 @@
 .program-selection {
   padding: 27px 0;
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 65px;
+    border: none;
+  }
 }
 
 .program-selection__title {
   margin: 0 0 37px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .program-selection__subtitle {
   max-width: 250px;
-  margin: 0 0 10px;
+  margin: 0 0 39px;
   text-transform: uppercase;
   color: variables.$accent-text-color;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 330px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

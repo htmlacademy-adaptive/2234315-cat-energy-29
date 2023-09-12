@@ -1,8 +1,19 @@
+@use "./../variables.scss";
+
 .catalog {
-  padding: 27px 0 0;
+  padding: 27px 0 35px;
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 65px 0 75px;
+    border-top: none;
+  }
 }
 
 .catalog__title {
   margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 84px;
+  }
 }

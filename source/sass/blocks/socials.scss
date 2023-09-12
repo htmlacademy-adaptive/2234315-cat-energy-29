@@ -6,16 +6,23 @@
   align-items: center;
   padding: 20px 0;
   margin: 0;
-  border-bottom: 1px solid #d9d9d9;
   list-style-type: none;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
 }
 
 .socials__item:not(:last-child) {
   margin-right: 24px;
 }
 
-.socials__link:focus {
-  outline: none;
+.socials__link{
+  display: flex;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .socials__link svg {

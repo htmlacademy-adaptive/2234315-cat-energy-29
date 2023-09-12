@@ -1,8 +1,23 @@
+@use "./../variables.scss";
+
 .main-header {
   padding: 14px 0;
+
+  @media (min-width: variables.$desktop-width) {
+    &--home {
+      position: absolute;
+      top: 0;
+      z-index: 9;
+      width: 100%;
+    }
+  }
 }
 
 .main-header__container {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: variables.$tablet-width) {
+    flex-wrap: wrap;
+  }
 }
