@@ -17,20 +17,15 @@
   margin-right: 24px;
 }
 
-.socials__link{
+.socials__link {
   display: flex;
-
-  &:focus {
-    outline: none;
-  }
 }
 
 .socials__link svg {
   fill: #666666;
 }
 
-.socials__link:hover svg,
-.socials__link:focus svg {
+.socials__link:hover svg {
   fill: variables.$accent-color;
 }
 

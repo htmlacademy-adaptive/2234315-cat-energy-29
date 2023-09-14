@@ -3,7 +3,13 @@
 .main-header {
   padding: 14px 0;
 
+  @media (max-width: variables.$tablet-width) {
+    padding: 25px 0;
+  }
+
   @media (min-width: variables.$desktop-width) {
+    padding: 55px 0;
+
     &--home {
       position: absolute;
       top: 0;

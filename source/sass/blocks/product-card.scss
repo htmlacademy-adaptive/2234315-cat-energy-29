@@ -143,7 +143,12 @@
   justify-content: space-between;
 
   @media (min-width: variables.$tablet-width) {
+    padding-bottom: 5px;
     border-bottom: 1px solid #cdcdcd;
+
+    &:not(&:last-child) {
+      margin-bottom: 5px;
+    }
   }
 }
 

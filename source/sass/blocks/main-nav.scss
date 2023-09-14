@@ -10,7 +10,11 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 50%;
+    max-width: 1000px;
+
+    &--home {
+      max-width: 50%;
+    }
   }
 }
 
@@ -55,6 +59,7 @@
     left: auto;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     background: none;
   }
 }
@@ -92,10 +97,12 @@
   text-decoration: none;
   color: variables.$accent-text-color;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: rgba(0, 0, 0, 0.6);
-    outline: none;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -113,8 +120,7 @@
   @media (min-width: variables.$desktop-width) {
     color: #ffffff;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: rgba(255, 255, 255, 0.6);
     }
 

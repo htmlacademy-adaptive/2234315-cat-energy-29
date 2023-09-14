@@ -1,17 +1,17 @@
 @use "./../variables.scss";
 
 .program-selection {
-  padding: 27px 0;
+  padding: 27px 0 0;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 65px;
+    padding-top: 40px;
     border: none;
   }
 }
 
 .program-selection__title {
-  margin: 0 0 37px;
+  margin-bottom: 37px;
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 54px;
@@ -20,14 +20,13 @@
 
 .program-selection__subtitle {
   max-width: 250px;
-  margin: 0 0 39px;
+  margin: 0;
   text-transform: uppercase;
   color: variables.$accent-text-color;
 
   @media (min-width: variables.$tablet-width) {
     max-width: 330px;
-    margin-bottom: 66px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
