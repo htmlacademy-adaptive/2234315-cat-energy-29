@@ -4,10 +4,8 @@
   display: flex;
   align-items: center;
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.8;
-    outline: none;
   }
 
   &:active {

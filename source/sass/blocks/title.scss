@@ -4,12 +4,13 @@
   display: flex;
 
   &--h2 {
+    margin: 0 auto;
     gap: 20px;
 
     &::before {
       content: "";
       height: 15px;
-      width: 0;
+      width: calc(50% - 160px);
       border-bottom: 2px solid variables.$accent-color;
     }
 
@@ -19,6 +20,27 @@
       width: 10px;
       border-bottom: 2px solid variables.$accent-color;
       flex-grow: 1;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &--h2 {
+      gap: 40px;
+    }
+
+    &::before {
+      height: 22px;
+      width: calc(50% - 354px);
+    }
+
+    &::after {
+      height: 22px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &::before {
+      width: calc(50% - 650px);
     }
   }
 }
@@ -40,10 +62,12 @@
 }
 
 .title--h2 .title__text {
+  max-width: 187px;
   font-size: 24px;
   line-height: 26px;
 
   @media (min-width: variables.$tablet-width) {
+    max-width: max-content;
     font-size: 36px;
     line-height: 36px;
   }

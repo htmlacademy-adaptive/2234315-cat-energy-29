@@ -32,10 +32,6 @@
   padding: 20px 0;
   border-bottom: 1px solid #d9d9d9;
 
-  &:focus {
-    outline: none;
-  }
-
   @media (min-width: variables.$tablet-width) {
     padding: 0;
     border-bottom: none;
@@ -46,8 +42,7 @@
   fill: #111111;
 }
 
-.main-footer__logo:hover svg,
-.main-footer__logo:focus svg {
+.main-footer__logo:hover svg {
   fill: #3e3e3e;
 }
 

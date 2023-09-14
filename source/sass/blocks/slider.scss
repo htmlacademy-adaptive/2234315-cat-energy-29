@@ -67,12 +67,7 @@
     border: 2px solid #666666;
   }
 
-  &:focus {
-    outline: none;
-  }
-
-  &:hover::after,
-  &:focus::after {
+  &:hover::after {
     border-color: variables.$accent-color;
   }
 
@@ -85,8 +80,7 @@
   fill: #666666;
 }
 
-.slider__control-item:hover path,
-.slider__control-item:focus path {
+.slider__control-item:hover path {
   fill: variables.$accent-color;
 }
 
@@ -98,8 +92,7 @@
   stroke: #666666;
 }
 
-.slider__control-item:hover rect,
-.slider__control-item:focus rect {
+.slider__control-item:hover rect {
   stroke: variables.$accent-color;
 }
 

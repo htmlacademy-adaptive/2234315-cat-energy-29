@@ -1,45 +1,77 @@
 @use "./../variables.scss";
 
 .form {
-  padding: 0 0 5px;
+  padding: 39px 0 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 66px 0 60px;
+  }
 }
 
 .form__section {
   &--base {
-    padding: 0 0 24px;
+    margin-bottom: 26px;
   }
 
   &--owner {
-    padding-top: 26px;
+    margin-bottom: 24px;
   }
 
   &--comment {
-    padding-top: 24px;
+    margin-bottom: 23px;
   }
 
   &--additional {
-    padding-top: 24px;
+    margin-bottom: 34px;
   }
 
-  &--submit {
-    padding-top: 23px;
-  }
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 65px;
 
-  @media (min-width: variables.$desktop-width) {
+    &--additional {
+      margin-bottom: 52px;
+    }
+
     &--submit {
-      padding-top: 54px;
+      margin: 0;
     }
   }
 
   @media (min-width: variables.$desktop-width) {
+    margin-bottom: 70px;
+
+    &--additional {
+      margin-bottom: 60px;
+    }
+
     &--submit {
-      padding-top: 64px;
+      margin: 0;
     }
   }
 }
 
 .form__title {
   margin-bottom: 35px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .form__section--owner .form__title {
+    margin-bottom: 76px;
+  }
+
+  .form__section--comment .form__title {
+    margin-bottom: 87px;
+  }
+
+  .form__section--additional .form__title {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .form__section--comment .form__title {
+    margin-bottom: 78px;
+  }
 }
 
 .form__group-wrapper {
@@ -93,6 +125,10 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: normal;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -131,6 +167,20 @@
   &:focus {
     box-shadow: 0 0 0 2px #444444;
     outline: none;
+
+    &:invalid {
+      box-shadow: 0 0 0 2px #ff8282;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 11px 40px 11px 20px;
+    font-size: 20px;
+    line-height: normal;
+
+    &--textarea {
+      height: 175px;
+    }
   }
 }
 
@@ -144,6 +194,10 @@
   stroke: variables.$accent-color;
 }
 
+.form__input:focus:invalid + .form__input-icon {
+  stroke: #ff8282;
+}
+
 .form__list {
   margin: 0;
   padding: 0;
@@ -152,7 +206,7 @@
 
 .form__group--programs .form__list {
   margin: 0 -20px;
-  padding: 20px;
+  padding: 22px 20px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
@@ -176,7 +230,7 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
+    gap: 32px 100px;
   }
 }
 
@@ -213,11 +267,11 @@
   height: 30px;
   margin-right: 15px;
   box-shadow: inset 0 0 0 1px #cdcdcd;
-}
 
-.form__checkbox + .form__control-mark {
-  width: 26px;
-  height: 26px;
+  @media (min-width: variables.$tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__radio + .form__control-mark {
@@ -240,10 +294,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   background-color: variables.$accent-color;
   border-radius: 50%;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__radio:disabled + .form__control-mark::before {
@@ -256,7 +315,16 @@
 }
 
 .form__checkbox:checked + .form__control-mark svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   fill: variables.$accent-color;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .form__checkbox:checked:disabled + .form__control-mark svg {
