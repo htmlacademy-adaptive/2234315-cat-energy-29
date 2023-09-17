@@ -3,7 +3,7 @@
 .main-header {
   padding: 14px 0;
 
-  @media (max-width: variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 25px 0;
   }
 
