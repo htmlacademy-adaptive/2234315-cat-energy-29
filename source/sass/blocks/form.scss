@@ -105,7 +105,9 @@
 
 .form__section--owner .form__group {
   @media (min-width: variables.$desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 80px;
   }
 }
 
@@ -272,6 +274,10 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.form__control-label {
+  width: calc(100% - 55px);
 }
 
 .form__radio + .form__control-mark {

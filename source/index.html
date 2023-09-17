@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин продуктов питания для котов «Кэт энерджи»</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header main-header--home">
       <div class="main-header__container container">
         <a class="main-logo" href="#">
-          <img class="main-logo__image" src="img/logo-image.svg" width="33" height="38" alt="Логотип «Кэт энерджи».">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-image_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-image_tablet.svg">
+            <img class="main-logo__image" src="img/logo-image_mobile.svg" width="33" height="38" alt="Логотип «Кэт энерджи».">
+          </picture>
           <img class="main-logo__name" src="img/logo-name.svg" width="101" height="18" alt="Название «Кэт энерджи».">
         </a>
         <div class="main-nav main-nav--home main-nav--nojs">
@@ -43,7 +49,11 @@
             </div>
             <p class="hero__slogan">Занялся собой? Займись котом!</p>
             <div class="hero__image">
-              <img src="img/hero-image.png" width="280" height="270" alt="CAT ENERGY PRO со вкусом курицы">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/hero-image_desktop.png 1x, img/hero-image_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/hero-image_tablet.png 1x, img/hero-image_tablet@2x.png 2x">
+                <img src="img/hero-image_mobile.png" srcset="img/hero-image_mobile@2x.png 2x" width="280" height="270" alt="CAT ENERGY PRO со вкусом курицы">
+              </picture>
             </div>
             <a class="hero__button button" href="form.html">Подобрать программу</a>
           </div>
@@ -105,10 +115,19 @@
           <div class="example__slider slider">
             <ul class="slider__layers">
               <li class="slider__layer">
-                <img src="img/cat-before.png" width="280" height="256" alt="Борис до.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/slider/cat-before_desktop.png 1x, img/slider/cat-before_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slider/cat-before_tablet.png 1x, img/slider/cat-before_tablet@2x.png 2x">
+                  <img src="img/slider/cat-before_mobile.png" srcset="img/slider/cat-before_mobile@2x.png 2x" width="280" height="256" alt="Борис до.">
+                </picture>
               </li>
               <li class="slider__layer">
-                <img src="img/cat-after.png" width="280" height="256" alt="Борис после.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/slider/cat-after_desktop.png 1x, img/slider/cat-after_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slider/cat-after_tablet.png 1x, img/slider/cat-after_tablet@2x.png 2x">
+                  <img src="img/slider/cat-after_mobile.png" srcset="img/slider/cat-after_mobile@2x.png 2x" width="280" height="256"
+                    alt="Борис после.">
+                </picture>
               </li>
             </ul>
             <div class="slider__control">

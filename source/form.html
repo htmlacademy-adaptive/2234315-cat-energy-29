@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы | Магазин питания для котов «Кэт энерджи»</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container container">
         <a class="main-logo" href="index.html">
-          <img class="main-logo__image" src="img/logo-image.svg" width="33" height="38" alt="Логотип «Кэт энерджи».">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-image_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-image_tablet.svg">
+            <img class="main-logo__image" src="img/logo-image_mobile.svg" width="33" height="38" alt="Логотип «Кэт энерджи».">
+          </picture>
           <img class="main-logo__name" src="img/logo-name.svg" width="101" height="18" alt="Название «Кэт энерджи».">
         </a>
         <div class="main-nav main-nav--nojs">

@@ -75,23 +75,26 @@
 .example__properties {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin: 0 0 35px;
 
   @media (min-width: variables.$tablet-width) {
     justify-content: start;
+    width: 50%;
     margin-bottom: 104px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    width: 100%;
     margin-bottom: 60px;
   }
 }
 
 .example__property {
+  position: relative;
   width: 100%;
   max-width: 50%;
-  height: min-content;
-  padding: 15px;
+  padding: 14px 10px 17px;
   border-radius: 3px;
   border: 1px solid #cdcdcd;
 
@@ -110,24 +113,26 @@
 }
 
 .example__property-number {
-  margin-bottom: 7px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: variables.$accent-text-color;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 11px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .example__property-description {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   width: max-content;
   max-width: 87px;
-  margin: 0 auto -30px;
   padding: 0 5px;
+  margin: -9px 0 0;
   font-family: variables.$secondary-font;
   font-size: 12px;
   line-height: 12px;
@@ -136,7 +141,6 @@
 
   @media (min-width: variables.$tablet-width) {
     max-width: 143px;
-    margin-bottom: -25px;
     padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
@@ -157,7 +161,7 @@
   @media (min-width: variables.$tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     font-size: 20px;
   }
 

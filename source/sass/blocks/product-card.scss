@@ -44,12 +44,21 @@
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
-  min-height: 107px;
 
   @media (min-width: variables.$tablet-width) {
     flex-basis: auto;
-    height: 210px;
     margin-bottom: 22px;
+  }
+}
+
+.product-card__image img {
+  @media (min-width: variables.$tablet-width) {
+    width: 200px;
+    height: auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 169px;
   }
 }
 
