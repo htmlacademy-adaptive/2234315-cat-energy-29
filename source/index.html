@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header main-header--home">
@@ -50,6 +50,10 @@
             <p class="hero__slogan">Занялся собой? Займись котом!</p>
             <div class="hero__image">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-image_desktop.webp 1x, img/hero-image_desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-image_tablet.webp 1x, img/hero-image_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero-image_mobile.webp 1x, img/hero-image_mobile@2x.webp 2x">
+
                 <source media="(min-width: 1440px)" srcset="img/hero-image_desktop.png 1x, img/hero-image_desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/hero-image_tablet.png 1x, img/hero-image_tablet@2x.png 2x">
                 <img src="img/hero-image_mobile.png" srcset="img/hero-image_mobile@2x.png 2x" width="280" height="270" alt="CAT ENERGY PRO со вкусом курицы">
@@ -116,17 +120,24 @@
             <ul class="slider__layers">
               <li class="slider__layer">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/slider/cat-before_desktop.webp 1x, img/slider/cat-before_desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/cat-before_tablet.webp 1x, img/slider/cat-before_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/cat-before_mobile.webp 1x, img/slider/cat-before_mobile@2x.webp 2x">
+
                   <source media="(min-width: 1440px)" srcset="img/slider/cat-before_desktop.png 1x, img/slider/cat-before_desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/slider/cat-before_tablet.png 1x, img/slider/cat-before_tablet@2x.png 2x">
                   <img src="img/slider/cat-before_mobile.png" srcset="img/slider/cat-before_mobile@2x.png 2x" width="280" height="256" alt="Борис до.">
                 </picture>
               </li>
               <li class="slider__layer">
-                <picture>
+                  <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/slider/cat-after_desktop.webp 1x, img/slider/cat-after_desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/cat-after_tablet.webp 1x, img/slider/cat-after_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/cat-after_mobile.webp 1x, img/slider/cat-after_mobile@2x.webp 2x">
+
                   <source media="(min-width: 1440px)" srcset="img/slider/cat-after_desktop.png 1x, img/slider/cat-after_desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/slider/cat-after_tablet.png 1x, img/slider/cat-after_tablet@2x.png 2x">
-                  <img src="img/slider/cat-after_mobile.png" srcset="img/slider/cat-after_mobile@2x.png 2x" width="280" height="256"
-                    alt="Борис после.">
+                  <img src="img/slider/cat-after_mobile.png" srcset="img/slider/cat-after_mobile@2x.png 2x" width="280" height="256" alt="Борис после.">
                 </picture>
               </li>
             </ul>
