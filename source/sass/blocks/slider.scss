@@ -54,6 +54,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #666666;
 
   &::after {
     content: "";
@@ -67,35 +68,19 @@
     border: 2px solid #666666;
   }
 
-  &:hover::after {
-    border-color: variables.$accent-color;
+  &:hover {
+    color: variables.$accent-color;
+
+    &::after {
+      border-color: variables.$accent-color;
+    }
   }
 
-  &:active::after {
-    border-color: rgba(94, 170, 47, 0.6);
+  &:active {
+    color: rgba(94, 170, 47, 0.6);
+
+    &::after {
+      border-color: rgba(94, 170, 47, 0.6);
+    }
   }
-}
-
-.slider__control-item path {
-  fill: #666666;
-}
-
-.slider__control-item:hover path {
-  fill: variables.$accent-color;
-}
-
-.slider__control-item:active path {
-  fill: rgba(94, 170, 47, 0.6);
-}
-
-.slider__control-item rect {
-  stroke: #666666;
-}
-
-.slider__control-item:hover rect {
-  stroke: variables.$accent-color;
-}
-
-.slider__control-item:active rect {
-  stroke: rgba(94, 170, 47, 0.6);
 }

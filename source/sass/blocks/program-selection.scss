@@ -8,6 +8,20 @@
     padding-top: 40px;
     border: none;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 20px;
+  }
+}
+
+.program-selection__container {
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .program-selection__title {

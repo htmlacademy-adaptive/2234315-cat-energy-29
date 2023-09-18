@@ -22,14 +22,14 @@
 .products__item {
   border-top: 1px solid #ebebeb;
 
-  @media (min-width: variables.$tablet-width) {
-    border-top: none;
-  }
-
   &:last-child {
     border-bottom: 1px solid #ebebeb;
+  }
 
-    @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
+    border-top: none;
+
+    &:last-child {
       border-bottom: none;
     }
   }

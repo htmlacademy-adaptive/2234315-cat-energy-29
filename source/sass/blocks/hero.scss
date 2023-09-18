@@ -26,8 +26,8 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    min-height: 975px;
-    padding-top: 65px;
+    min-height: 850px;
+    padding-top: 40px;
 
     &::before {
       display: none;
@@ -100,6 +100,10 @@
     text-align: start;
     color: #000000;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__image {
@@ -138,5 +142,6 @@
   @media (min-width: variables.$tablet-width) {
     max-width: fit-content;
     padding: 17px 26px;
+    font-size: 20px;
   }
 }
