@@ -13,7 +13,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  background: variables.$accent-color;
+  background-color: variables.$accent-color;
   border: none;
   cursor: pointer;
 
@@ -27,19 +27,15 @@
 
   &--secondary {
     color: variables.$base-text-color;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
 
     &:hover {
-      background: #ebebeb;
+      background-color: #ebebeb;
     }
 
     &:active {
       color: rgba(68, 68, 68, 0.3);
-      background: #ebebeb;
+      background-color: #ebebeb;
     }
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 20px;
   }
 }

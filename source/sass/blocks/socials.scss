@@ -11,6 +11,8 @@
   list-style-type: none;
 
   @media (min-width: variables.$tablet-width) {
+    justify-content: flex-end;
+    min-width: 165px;
     max-width: 30%;
     padding: 0;
   }
@@ -18,16 +20,13 @@
 
 .socials__link {
   display: flex;
-}
+  color: #666666;
 
-.socials__link svg {
-  fill: #666666;
-}
+  &:hover {
+    color: variables.$accent-color;
+  }
 
-.socials__link:hover svg {
-  fill: variables.$accent-color;
-}
-
-.socials__link:active svg {
-  fill: rgba(104, 183, 56, 0.3);
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
 }

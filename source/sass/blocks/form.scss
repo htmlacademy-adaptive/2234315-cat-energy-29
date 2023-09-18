@@ -6,6 +6,10 @@
   @media (min-width: variables.$tablet-width) {
     padding: 66px 0 60px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 66px 0 79px;
+  }
 }
 
 .form__section {
@@ -22,14 +26,14 @@
   }
 
   &--additional {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 65px;
 
     &--additional {
-      margin-bottom: 52px;
+      margin-bottom: 50px;
     }
 
     &--submit {
@@ -41,7 +45,7 @@
     margin-bottom: 70px;
 
     &--additional {
-      margin-bottom: 60px;
+      margin-bottom: 58px;
     }
 
     &--submit {
@@ -103,6 +107,17 @@
   }
 }
 
+.form__group-wrapper.container,
+.form__group.container {
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .form__section--owner .form__group {
   @media (min-width: variables.$desktop-width) {
     display: grid;
@@ -146,7 +161,7 @@
 
 .form__input {
   width: 100%;
-  padding: 14px 40px 14px 15px;
+  padding: 14px 40px 13px 15px;
   margin-left: 13px;
   font-family: variables.$primary-font;
   font-size: 16px;
@@ -188,16 +203,16 @@
 
 .form__input-icon {
   position: absolute;
-  right: 15px;
-  stroke: #000000;
+  right: 12px;
+  color: #000000;
 }
 
 .form__input:focus + .form__input-icon {
-  stroke: variables.$accent-color;
+  color: variables.$accent-color;
 }
 
 .form__input:focus:invalid + .form__input-icon {
-  stroke: #ff8282;
+  color: #ff8282;
 }
 
 .form__list {
@@ -208,13 +223,13 @@
 
 .form__group--programs .form__list {
   margin: 0 -20px;
-  padding: 22px 20px;
+  padding: 22px 20px 19px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
-    padding: 23px 27px;
+    padding: 23px 27px 27px;
     border: 1px solid #d9d9d9;
   }
 
@@ -232,7 +247,7 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px 100px;
+    gap: 32px 80px;
   }
 }
 
@@ -273,6 +288,7 @@
   @media (min-width: variables.$tablet-width) {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
   }
 }
 
@@ -320,12 +336,16 @@
   color: rgba(34, 34, 34, 0.3);
 }
 
+.form__control-mark svg {
+  color: transparent;
+}
+
 .form__checkbox:checked + .form__control-mark svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: variables.$accent-color;
+  color: variables.$accent-color;
 
   @media (min-width: variables.$tablet-width) {
     width: 36px;
@@ -334,7 +354,7 @@
 }
 
 .form__checkbox:checked:disabled + .form__control-mark svg {
-  fill: rgba(104, 183, 56, 0.3);
+  color: rgba(104, 183, 56, 0.3);
 }
 
 .form__radio:not(:disabled):focus + .form__control-mark,
@@ -354,7 +374,20 @@
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 64px;
+    gap: 61px;
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 79px;
+  }
+}
+
+.form__button {
+  @media (min-width: variables.$tablet-width) {
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -368,6 +401,8 @@
   color: variables.$accent-text-color;
 
   @media (min-width: variables.$tablet-width) {
+    margin-top: 0;
+    font-size: 16px;
     text-align: start;
   }
 }

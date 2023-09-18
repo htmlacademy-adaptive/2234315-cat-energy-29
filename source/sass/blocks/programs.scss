@@ -47,6 +47,10 @@
   @media (min-width: variables.$tablet-width) {
     padding: 77px 315px 53px 52px;
 
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
     &--weight-loss {
       background-position: top 81px right 63px;
       background-size: 200px 211px;
@@ -104,7 +108,7 @@
 
 .programs__item-description {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   font-family: variables.$secondary-font;
   border-bottom: 1px solid #d9d9d9;
 
@@ -124,7 +128,7 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  padding: 15px 47px 18px 0;
+  padding: 19px 47px 22px 0;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -146,5 +150,6 @@
   @media (min-width: variables.$tablet-width) {
     padding: 4px 57px 4px 0;
     font-size: 20px;
+    line-height: normal;
   }
 }
