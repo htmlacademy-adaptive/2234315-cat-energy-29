@@ -5,7 +5,7 @@
   background-color: #f2f2f2;
 }
 
-.footer__container {
+.main-footer__container {
   @media (min-width: variables.$tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@
   }
 }
 
-.footer__info {
+.main-footer__info {
   padding: 20px 0;
 
   @media (min-width: variables.$tablet-width) {
